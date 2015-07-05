@@ -2,11 +2,11 @@
 
 ### Problem Statement
 - Write Here
-- [Project Euler URL](http://projecteuler.net/problem=1)
+- [Project Euler URL](https://projecteuler.net/problem=1)
 - Solution: Write Here
 
 ### Techniques
-1. Write Here
+1. TODO
 
 ### Note
 - None
