@@ -9,6 +9,8 @@
   range of primes.
 
 ### Sieve of Eratosthenes (250s BC)
+- Sieve of Eratosthenes is an algorithm to find all the prime numbers between 1 and less than or equal to a given
+  integer N.
 - The sieve of Eratosthenes is one of the most efficient ways to find all of the smaller primes.
 - An Anonymous short mnemonic rhyme
 
@@ -21,15 +23,17 @@
     The numbers that remain are Prime."
 
 ### Algorithm
-Sieve of Eratosthenes algorithm to find all the prime numbers between 1 and less than or equal to a given integer n is
-as follows
-
-1. Create a list of consecutive integers from 2 through n: (2, 3, 4, ..., n).
-2. Initially, let p equal 2, the first prime number.
-3. Starting from p, enumerate its multiples by counting to n in increments of p, and mark them in the list (these
-   will be 2p, 3p, 4p, ... ; the p itself should not be marked).
-4. Find the FIRST number greater than p in the list that is not marked. If there was no such number, stop.
-   Otherwise, let p now equal this new number (which is the next prime), and repeat from step 3.
+* Input(s)
+    - N
+* Output
+    - A list of prime numbers between 1 and N
+* Algorithm
+    1. Create a list of consecutive integers from 2 through n: (2, 3, 4, ..., n).
+    2. Initially, let p equal 2, the first prime number.
+    3. Starting from p, enumerate its multiples by counting to n in increments of p, and mark them in the list (these
+       will be 2p, 3p, 4p, ... ; the p itself should not be marked).
+    4. Find the FIRST number greater than p in the list that is not marked. If there was no such number, stop.
+       Otherwise, let p now equal this new number (which is the next prime), and repeat from step 3.
 
 ### Optimisation(s)
 1. As a refinement, it is sufficient to mark the numbers in step 3 starting from p<sup>2, as all the smaller multiples

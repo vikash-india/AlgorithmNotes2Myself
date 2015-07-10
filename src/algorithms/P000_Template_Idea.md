@@ -7,10 +7,15 @@
 - Write here
 
 ### Algorithm
-1. Write here
+* Input(s)
+    - Write Here
+* Output
+    - Write Here
+* Algorithm
+    1. Write Here
 
 ### Optimisation(s)
-- None
+1. None
 
 ### Complexity
 - NA

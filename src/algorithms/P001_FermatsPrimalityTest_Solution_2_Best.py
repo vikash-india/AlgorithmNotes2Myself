@@ -1,16 +1,20 @@
 # Description: Test a Number for Prime Using Fermat's Primality Test
 
+import logging
 import random
 
 """
 Note
 1. This implementation tests a NUMBER for prime by choosing random values for 'a' and also limits the number of
    iterations.
-2. Optimisation: This implementation checks for 2 separately and then only check for all odd numbers between 3 and
-   NUMBER. This improves the probability of success as even random numbers need not be considered.
-3. Optimisation: This implementation chooses random ODD values of a between 3 and NUMBER.
-4. Optimisation: This implementation limits the number of iterations instead of testing for all possible values of a.
-5. This algorithm can easily test long prime numbers of 100 digits or more.
+2. Optimisation(s)
+    - This implementation checks for 2 separately and then only check for all odd numbers between 3 and NUMBER. This
+      improves the probability of success as even random numbers need not be considered.
+    - This implementation chooses random ODD values of a between 3 and NUMBER.
+    - This implementation limits the number of iterations instead of testing for all possible values of a.
+3. Limitation(s)
+    - This algorithm can easily test long prime numbers of 100 digits or more and is limited by the number of digits
+      in prime numbers.
 """
 def is_fermat_prime(number, iterations):
     """Test the primality of a number using randomised algorithm."""
@@ -39,7 +43,7 @@ def is_fermat_prime(number, iterations):
         remainder = pow(random_a, number - 1, number)
 
         if(remainder != 1):
-            print u'For a = {0}, {0}^({2} - 1) = {1} (mod {2}).'.format(random_a, remainder, number)
+            logging.info(u'For a = {0}, {0}^({2} - 1) = {1} (mod {2}).'.format(random_a, remainder, number))
 
             # Definitely a Composite Number
             # print "Tested for {0}".format(tested_values_of_a)
@@ -51,6 +55,9 @@ def is_fermat_prime(number, iterations):
 
 def main():
     """Main function to test the above implementation. """
+
+    # Set logging level from DEBUG, INFO, WARNING. ERROR, CRITICAL
+    logging.basicConfig(level=logging.INFO)
 
     # Sample Prime Numbers
     PRIME_NUMBER_03_DIGIT = 997                     # @UnusedVariable. Largest  3-digit prime number.
@@ -86,7 +93,7 @@ def main():
 
     ITERATIONS = 100                                # Number of Iterations
 
-    number = PRIME_NUMBER_90_DIGIT
+    number = CARMICHAEL_NUMBER_03_DIGIT
     if(number is not None):
         result = is_fermat_prime(number, ITERATIONS)
         print '{0} is {1}Prime.'.format(number, '' if result else 'NOT ')

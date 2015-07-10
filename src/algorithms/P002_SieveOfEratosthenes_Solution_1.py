@@ -6,11 +6,11 @@ import logging
 """
 Note
 1. This implementation generates all prime numbers between 1 and N using Optimised Sieve of Eratosthenes Algorithm.
-2. Optimisations
+2. Optimisation(s)
     - Instead of testing for all multiples of n, it is sufficient to mark the numbers in starting from n^2, as all the
       smaller multiples of n would have already been marked at that point. This means that the algorithm is allowed to
       terminate when n^2 is greater than LIMIT.
-4. Limitations
+4. Limitation(s)
     - This implementation SHOULD NOT BE TRIED WITH A NUMBER GREATER THAN 100 Million.
 """
 
@@ -44,11 +44,11 @@ def main():
     """Main function to test the above implementation. """
 
     # Set logging level from DEBUG, INFO, WARNING. ERROR, CRITICAL
-    logging.basicConfig(level=logging.DEBUG)
+    logging.basicConfig(level=logging.INFO)
 
     # Easily runs till 10 Million. Can ALSO run till 100 Million
     # CAUTION: DO NOT TRY FOR NUMBER GREATER THAN 100 BILLION
-    N = 20
+    N = 100
     list_of_primes = sieve_of_eratosthenes(N)
     print 'There are {0} prime numbers between 1 and {1}. The prime numbers are: \n{2}.'.format(len(list_of_primes), N,\
                                                                                        list_of_primes)

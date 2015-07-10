@@ -5,9 +5,9 @@ import logging
 """
 Note
 1. Write Here
-2. Optimisations
+2. Optimisation(s)
     - Write Here
-3. Limitations
+3. Limitation(s)
     - Write Here
 """
 

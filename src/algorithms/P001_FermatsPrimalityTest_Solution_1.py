@@ -1,12 +1,15 @@
 # Description: Test a Number for Prime Using Fermat's Primality Test
 
+import logging
+
 """
 Note
 1. This implementation tests a NUMBER for prime using all possible values of 'a' between 1 and NUMBER.
-2. Optimisation: This implementation checks for 2 separately and then only checks for all odd numbers between 3 and
-   NUMBER.
-3. This algorithm SHOULD NOT BE TRIED WITH A NUMBER GREATER THAN 7-DIGIT or 8-DIGIT numbers as it might take eternity
-   to finish.
+2. Optimisation
+    - This implementation checks for 2 separately and then only checks for all odd numbers between 3 and NUMBER.
+3. Limitation(s)
+    - This algorithm SHOULD NOT BE TRIED WITH A NUMBER GREATER THAN 7-DIGIT or 8-DIGIT numbers as it might take eternity
+      to finish.
 """
 
 def is_fermat_prime(number):
@@ -40,6 +43,9 @@ def is_fermat_prime(number):
 
 def main():
     """Main function to test the above implementation. """
+
+    # Set logging level from DEBUG, INFO, WARNING. ERROR, CRITICAL
+    logging.basicConfig(level=logging.DEBUG)
 
     # Sample Prime Numbers
     PRIME_NUMBER_03_DIGIT = 997                     # @UnusedVariable. Largest  3-digit prime number.

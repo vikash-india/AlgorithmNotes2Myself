@@ -35,3 +35,25 @@
 ### Fermat Witness
 - Any number a is called Fermat Witness for the COMPOSITENESS  of n, if a<sup>n - 1</sup> ≢ 1 (mod n) when n is
   COMPOSITE.
+
+### Algorithm
+* Input(s)
+    - n: a value to test for primality, n>3.
+    - k: a parameter that determines the number of times to test for primality.
+* Output
+    - Composite if n is composite, otherwise probably prime
+* The algorithm
+    1. Repeat k times:
+        1. Pick a randomly in the range [2, n − 2].
+        2. If a<sup>(n-1)</sup> ≢    p (mod n), then return Composite.
+    2. If composite is never returned: return probably prime.
+
+### Optimisation(s)
+1. Check for 2 separately and then only checks for all odd numbers between 3 and NUMBER.
+
+### Complexity
+- The running time of this algorithm is O(k).
+
+### TODO
+- None
+
