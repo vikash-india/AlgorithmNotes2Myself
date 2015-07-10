@@ -42,4 +42,5 @@ as follows
 - The running time of this algorithm is O(n log log n).
 
 ### TODO
+- Implement optimisation 2.
 - This takes a lot of memory for generating large range of prime numbers. Learn to use segmented sieve algorithm.
