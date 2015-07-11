@@ -33,7 +33,7 @@ def is_fermat_prime(number):
         # Alternatively test a^(p-1) = 1 ( mod p )
         remainder = pow(i, number - 1, number)
         if(remainder != 1):
-            print u'For a = {0}, {0}^({2} - 1) = {1} (mod {2}).'.format(i, remainder, number)
+            logging.info(u'For a = {0}, {0}^({2} - 1) = {1} (mod {2}).'.format(i, remainder, number))
 
             # Definitely a Composite Number
             return False;
