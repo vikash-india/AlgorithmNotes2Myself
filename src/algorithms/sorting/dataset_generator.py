@@ -6,9 +6,9 @@ import logging
 # Global Configuration
 TOTAL_ROWS = 10
 SORTED = False            # Overrides REVERSE_SORTED and RANDOM_NUMBERS
-REVERSE_SORTED = False    # Overrides RANDOM_NUMBERS
-RANDOM_NUMBERS = True     # Least Precedence
-WRITE_TO_FILE = False
+REVERSE_SORTED = True    # Overrides RANDOM_NUMBERS
+RANDOM_NUMBERS = False     # Least Precedence
+WRITE_TO_FILE = True
 
 def configure_logging(write_to_file_enabled):
     """Configure Logging Based on Global Configurations."""
@@ -60,7 +60,7 @@ def main():
 
     # Write numbers to a file
     # Filenames Examples: dataset_10_reverse_sorted.txt, dataset_100_sorted.txt, dataset_1000_random.txt etc.
-    filename="dataset/dataset_{0}_{1}.txt".format(TOTAL_ROWS, 'sorted' if SORTED else 'reverse_sorted' if REVERSE_SORTED else 'random')
+    filename="dataset/dataset_{0}_{1}.txt".format(TOTAL_ROWS, 'sorted' if SORTED else 'reversed' if REVERSE_SORTED else 'random')
     write_to_file(numbers, filename)
 
 # Call Main
