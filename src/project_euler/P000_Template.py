@@ -1,5 +1,7 @@
 # Description: Write Here
 
+import logging
+
 """
 Technique
 - Write Here
@@ -19,6 +21,9 @@ def function_name():
 # Main
 def main():
     """Main function to test the above implementation. """
+
+    # Set logging level from DEBUG, INFO, WARNING. ERROR, CRITICAL
+    logging.basicConfig(level=logging.DEBUG)
 
     result = function_name()
     print 'Write Here {0} '.format(result)
