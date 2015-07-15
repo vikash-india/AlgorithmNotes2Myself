@@ -54,6 +54,9 @@
 ### Complexity
 - The running time of this algorithm is O(k).
 
+### Note
+- All prime numbers greater tan 7 ends in 1 or 3 or 7 or 9. This can be used in optimisations while solving certain
+  set of problems.
+
 ### TODO
 - None
-
