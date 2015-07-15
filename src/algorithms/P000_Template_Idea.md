@@ -18,10 +18,14 @@
 1. None
 
 ### Complexity
-- NA
+- Worst case time complexity: NA
+- Worst case space complexity: NA
 
 ### Interesting URLs
 - [URL Text](http://www.writehere.com)
+
+### Note
+- Write Here
 
 ### TODO
 - None
