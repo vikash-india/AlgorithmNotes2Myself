@@ -46,16 +46,19 @@
    time.
 
 ### Complexity
-- Worst case time complexity is O(n<sup>2</sup>) where n is the number of items being sorted.
-- Best case time complexity is  O(n) where n is the number of items being sorted.
-- Average case time complexity is O(n<sup>2</sup>) where n is the number of items being sorted.
-- Worst case space complexity is O(1).
+- Worst case time complexity: O(n<sup>2</sup>) where n is the number of items being sorted.
+- Best case time complexity: O(n) where n is the number of items being sorted.
+- Average case time complexity: O(n<sup>2</sup>) where n is the number of items being sorted.
+- Worst case space complexity: O(1).
 
 ### Interesting URLs
 - [Bubble Sort Animations](http://www.cs.armstrong.edu/liang/animation/web/BubbleSort.html)
 - [Animations of Sorting Algorithms - 1](http://sorting.at/)
 - [Animations of Sorting Algorithms - 2](http://www.sorting-algorithms.com/)
 - [Data Structure Visualisations](https://www.cs.usfca.edu/~galles/visualization/Algorithms.html)
+
+### Note
+- None
 
 ### TODO
 - None

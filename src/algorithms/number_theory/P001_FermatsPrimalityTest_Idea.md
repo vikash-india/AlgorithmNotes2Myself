@@ -52,7 +52,11 @@
 1. Check for 2 separately and then only checks for all odd numbers between 3 and NUMBER.
 
 ### Complexity
-- The running time of this algorithm is O(k).
+- Worst case time complexity: O(k)
+- Best case time complexity: NA
+- Average case time complexity: NA
+
+- Worst case space complexity: NA
 
 ### Note
 - All prime numbers greater tan 7 ends in 1 or 3 or 7 or 9. This can be used in optimisations while solving certain

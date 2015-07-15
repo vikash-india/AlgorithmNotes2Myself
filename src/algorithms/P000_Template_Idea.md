@@ -19,13 +19,16 @@
 
 ### Complexity
 - Worst case time complexity: NA
+- Best case time complexity: NA
+- Average case time complexity: NA
+
 - Worst case space complexity: NA
 
 ### Interesting URLs
 - [URL Text](http://www.writehere.com)
 
 ### Note
-- Write Here
+- None
 
 ### TODO
 - None

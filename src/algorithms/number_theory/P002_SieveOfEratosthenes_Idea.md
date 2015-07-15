@@ -43,7 +43,14 @@
    thus marking only odd multiples of p.
 
 ### Complexity
-- The running time of this algorithm is O(n log log n).
+- Worst case time complexity: O(n log log n)
+- Best case time complexity: NA
+- Average case time complexity: NA
+
+- Worst case space complexity: NA
+
+### Note
+- None
 
 ### TODO
 - Implement optimisation 2.
