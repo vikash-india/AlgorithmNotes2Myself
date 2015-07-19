@@ -89,11 +89,12 @@ def main():
     CARMICHAEL_NUMBER_13_DIGIT = 9746347772161      # @UnusedVariable. N = 7 . 11 . 13 . 17 . 19 . 31 . 37 . 41 . 641
     CARMICHAEL_NUMBER_14_DIGIT = 26491881502801     # @UnusedVariable. N = 11 . 13 . 17 . 19 . 29 . 31 . 37 . 43 . 401
     CARMICHAEL_NUMBER_15_DIGIT = None               # @UnusedVariable.
+    CARMICHAEL_NUMBER_69_DIGIT = 260849323075371835669784094383812120359260783810157225730623388382401
     CARMICHAEL_NUMBER_90_DIGIT = None               # @UnusedVariable.
 
-    ITERATIONS = 100                                # Number of Iterations
+    ITERATIONS = 500                                # Number of Iterations
 
-    number = CARMICHAEL_NUMBER_03_DIGIT
+    number = CARMICHAEL_NUMBER_69_DIGIT
     if(number is not None):
         result = is_fermat_prime(number, ITERATIONS)
         print '{0} is {1}Prime.'.format(number, '' if result else 'NOT ')
