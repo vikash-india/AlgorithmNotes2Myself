@@ -60,7 +60,7 @@ def main():
 
     # Easily runs till 10 Million. Can ALSO run till 100 Million if given enough time.
     # CAUTION: DO NOT TRY FOR NUMBER GREATER THAN 100 BILLION
-    UPPER_LIMIT = 200000000
+    UPPER_LIMIT = 200000000         # @UnusedVariable.
     N = 1000
     list_of_primes = sieve_of_eratosthenes(N)
     print 'There are {0} prime numbers between 1 and {1}. The prime numbers are: \n{2}.'.format(len(list_of_primes), N,\

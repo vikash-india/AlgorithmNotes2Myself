@@ -46,13 +46,13 @@ def prime_factors_using_trial_division(n):
 # Main
 def main():
     """Main function to test the above implementation. """
-    NUMBER_01 = 600851475143         # 12-digit number with factors 71 x 839 x 1471 x 6857
-    NUMBER_02 = 9007199254740992     # 20-digit number with factors 2^53
-    NUMBER_03 = 9007199254740881     # 16-digit PRIME number.
-    NUMBER_04 = 99999999999999999999 # 20-digit number with factors 3 x 3 x 11 x 41 x 101 x 271 x 3541 x 9091 x 27961
+    NUMBER_01 = 600851475143         # @UnusedVariable. 12-digit number with factors 71 x 839 x 1471 x 6857
+    NUMBER_02 = 9007199254740992     # @UnusedVariable. 20-digit number with factors 2^53
+    NUMBER_03 = 9007199254740881     # @UnusedVariable. 16-digit PRIME number.
+    NUMBER_04 = 99999999999999999999 # @UnusedVariable. 20-digit number with factors 3 x 3 x 11 x 41 x 101 x 271 x 3541 x 9091 x 27961
 
     # DO NOT TRY NUMBERS
-    NUMBER_05 = 10000000000000000001 # 20-digit number with factors 11 x 909090909090909091
+    NUMBER_05 = 10000000000000000001 # @UnusedVariable. 20-digit number with factors 11 x 909090909090909091
 
     # Set logging level from DEBUG, INFO, WARNING. ERROR, CRITICAL
     logging.basicConfig(level=logging.DEBUG)
