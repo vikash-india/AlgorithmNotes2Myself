@@ -30,19 +30,18 @@ def sieve_of_eratosthenes(n):
     if (last_item == 1):
         list_of_numbers.append(True)
 
-
     # Explicitly Set True for the even prime 2
     list_of_numbers[1] = True
 
     logging.debug("Square Root(N): {0}".format(int(math.floor(math.sqrt(n))) + 1))
     # for i = 2, 3, 4, ..., not exceeding Square Root(n)
-    for i in range (3, int(math.floor(math.sqrt(n))) + 1, 2):
+    for i in xrange (3, int(math.floor(math.sqrt(n))) + 1, 2):
 
         logging.debug("i={0}".format(i))
 
         if list_of_numbers[i - 1] == True:
             # for j = i^2, i^2+i, i^2+2i, i^2+3i not exceeding n
-            for j in range(i * i, n + 1,  2*i):
+            for j in xrange(i * i, n + 1,  2*i):
                 logging.debug("\tj={0}".format(j))
                 list_of_numbers[j - 1] = False
 
@@ -59,12 +58,12 @@ def main():
     # Set logging level from DEBUG, INFO, WARNING. ERROR, CRITICAL
     logging.basicConfig(level=logging.INFO)
 
-    # Easily runs till 10 Million. Can ALSO run till 100 Million
+    # Easily runs till 10 Million. Can ALSO run till 100 Million if given enough time.
     # CAUTION: DO NOT TRY FOR NUMBER GREATER THAN 100 BILLION
     UPPER_LIMIT = 200000000
     N = 1000
     list_of_primes = sieve_of_eratosthenes(N)
     print 'There are {0} prime numbers between 1 and {1}. The prime numbers are: \n{2}.'.format(len(list_of_primes), N,\
-                                                                                       list_of_primes)
+                                                                                       "")
 # Call Main
 main()

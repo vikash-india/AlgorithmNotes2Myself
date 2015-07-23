@@ -31,6 +31,7 @@
         2. Repeat till n % p == 0
             1. Add i to the list of prime factors.
             2. Set n = n / i
+        3. break if n = 1. All prime factors have been found. Hence no need to continue.
     3. Add n to the list of prime factors if n > 1.
     4. Return the list of prime factors
 

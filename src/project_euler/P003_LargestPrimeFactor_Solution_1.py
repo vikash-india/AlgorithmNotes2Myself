@@ -16,18 +16,31 @@ Instrumentation
 - Time for 100 runs: Minimum - NA sec, Average - NA sec, Maximum NA sec
 - Write Here
 """
-
 def prime_factors_using_trial_division(n):
     """Returns a list of all prime prime_factors of n"""
 
     prime_factors = []
 
-    for i in range(2, int(math.sqrt(n)) + 1):
+    # Test for 2 separately so that only ODD numbers can be tested in the loop
+    while n % 2 == 0:
+        factor = 2
+        prime_factors.append(factor)
+        n = n // 2
+
+    # Test only for ODD numbers starting with 3
+    for i in xrange(3, int(math.sqrt(n)) + 1, 2):
+        # logging.debug("i = {0}".format(i))
         while n % i == 0:
             factor = i
             prime_factors.append(factor)
             n = n // i
+            logging.debug("Factor = {0}, N = {1}".format(i, n))
 
+        # All factors have been found if N is reduced to 0.
+        if n == 1:
+            break
+
+    # If no factor has been found then N is PRIME and the only prime factor of itself.
     if n > 1:
         prime_factors.append(n)
 
@@ -39,7 +52,7 @@ def main():
     N = 600851475143
 
     # Set logging level from DEBUG, INFO, WARNING. ERROR, CRITICAL
-    logging.basicConfig(level=logging.DEBUG)
+    logging.basicConfig(level=logging.INFO)
 
     factors = prime_factors_using_trial_division(N)
     largest_factor = factors[-1]

@@ -33,7 +33,7 @@ def is_fermat_prime(number, iterations):
     if (number % 2 != 1):
         return False;
 
-    for _ in range(1, iterations):
+    for _ in xrange(1, iterations):
         # Return a randomly selected ODD element from the range 3 to number
         random_a = random.randrange(3, number, 2)
         tested_values_of_a.append(random_a)
@@ -94,7 +94,7 @@ def main():
 
     ITERATIONS = 500                                # Number of Iterations
 
-    number = CARMICHAEL_NUMBER_69_DIGIT
+    number = PRIME_NUMBER_90_DIGIT
     if(number is not None):
         result = is_fermat_prime(number, ITERATIONS)
         print '{0} is {1}Prime.'.format(number, '' if result else 'NOT ')

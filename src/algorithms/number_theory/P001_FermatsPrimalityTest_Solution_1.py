@@ -28,7 +28,7 @@ def is_fermat_prime(number):
         return False;
 
     # Optimisation: Test for all odd numbers starting 3
-    for i in range(3, number, 2):
+    for i in xrange(3, number, 2):
         # Fermat's Little Theorem: a^p = a ( mod p )
         # Alternatively test a^(p-1) = 1 ( mod p )
         remainder = pow(i, number - 1, number)
@@ -80,7 +80,7 @@ def main():
     CARMICHAEL_NUMBER_90_DIGIT = None               # @UnusedVariable.
 
     # CAUTION: DO NOT TRY WITH A NUMBER GREATER THAN 7-DIGIT
-    number = CARMICHAEL_NUMBER_04_DIGIT
+    number = PRIME_NUMBER_07_DIGIT
     if(number is not None):
         result = is_fermat_prime(number)
         print '{0} is {1}Prime.'.format(number, '' if result else 'NOT ')
