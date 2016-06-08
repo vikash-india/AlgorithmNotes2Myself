@@ -1,5 +1,3 @@
-# Description: Write Here
-
 import logging
 import math
 
@@ -16,6 +14,8 @@ Instrumentation
 - Time for 100 runs: Minimum - NA sec, Average - NA sec, Maximum NA sec
 - Write Here
 """
+
+
 def prime_factors_using_trial_division(n):
     """Returns a list of all prime prime_factors of n"""
 
@@ -46,19 +46,7 @@ def prime_factors_using_trial_division(n):
 
     return prime_factors
 
-# Main
-def main():
-    """Main function to test the above implementation. """
-    N = 600851475143
 
-    # Set logging level from DEBUG, INFO, WARNING. ERROR, CRITICAL
-    logging.basicConfig(level=logging.INFO)
-
-    factors = prime_factors_using_trial_division(N)
-    largest_factor = factors[-1]
-
-    logging.info('Factors of {0} are {1}'.format(N, factors))
-    logging.info('Largest Factor is {0} '.format(largest_factor))
-
-# Call Main
-main()
+def answer(n):
+    prime_factors = prime_factors_using_trial_division(n)
+    return prime_factors[-1]

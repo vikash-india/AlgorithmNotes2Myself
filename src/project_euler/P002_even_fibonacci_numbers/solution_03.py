@@ -1,5 +1,3 @@
-# Description: Sum of all Even Fibonacci Numbers Less Than 4 Million
-
 """
 Technique
 - Similar logic as previous one with a slightly different implementation. No change in performance though.
@@ -27,11 +25,12 @@ Instrumentation
 - Input Details: UPPER_BOUND = 1 Billion
 - Time for 100 runs: Minimum - 0.0 sec, Average - 0.0 sec, Maximum 0.0 sec
 """
-def sum_of_even_fibonacci_numbers(upper_bound):
+
+
+def answer(upper_bound):
     a, b = 1, 1
     result = 0
     while ((a + b) < upper_bound):
-
         # This is the 3rd term that directly gets added to the result
         result += (a + b)
 
@@ -39,14 +38,3 @@ def sum_of_even_fibonacci_numbers(upper_bound):
         a, b = a + 2 * b, 2 * a + 3 * b
 
     return result
-
-# Main
-def main():
-    """Main function to test the above implementation. """
-
-    UPPER_BOUND = 4000000
-    result = sum_of_even_fibonacci_numbers(UPPER_BOUND)
-    print 'The sum of even fibionacci numbers less than {0} is {1}'.format(UPPER_BOUND, result)
-
-# Call Main
-main()

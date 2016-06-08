@@ -6,15 +6,5 @@
         1, 2, 3, 5, 8, 13, 21, 34, 55, 89, ...
   By considering the terms in the Fibonacci sequence whose values do not exceed four million, find the sum of the
   even-valued terms.
-- [Project Euler URL](https://projecteuler.net/problem=2)
+- [Project Euler Problem 2](https://projecteuler.net/problem=2)
 - Solution: 4613732
-
-### Techniques
-1. Generate a Fibonacci series through a loop and add even numbers.
-2. Add every third Fibonacci number instead of checking for the remainder.
-
-### Note
-- None
-
-### TODO
-- None

@@ -1,5 +1,3 @@
-# Description: Sum of all Natural Numbers Less than 1000 Which are Multiples of 3 or 5
-
 """
 Technique
 - Sum of all multiples of 3 + Sum of all multiples of 5 - Sum of all multiples of 15
@@ -17,23 +15,15 @@ Instrumentation
 - Time for 100 runs: Minimum - 0.0 sec, Average - 0.0 sec, Maximum 0.0 sec
 - Among the FASTEST algorithms. In fact, THE FASTEST with Big O(1) complexity.
 """
-def sum_of_N_natural_numbers(n):
+
+
+def sum_of_natural_numbers(n):
     return n * (n + 1) // 2
 
-def sum_of_multiples_of_3_and_5(n):
-    n3 = (n - 1) // 3       # Floor of (n - 1) / 3
-    n5 = (n - 1) // 5       # Floor of (n - 1) / 5
-    n15 = (n - 1) // 15     # Floor of (n - 1) / 15
 
-    return 3 * sum_of_N_natural_numbers(n3) + 5 * sum_of_N_natural_numbers(n5) - (15 * sum_of_N_natural_numbers(n15))
+def answer(n):
+    n3 = (n - 1) // 3  # Floor of (n - 1) / 3
+    n5 = (n - 1) // 5  # Floor of (n - 1) / 5
+    n15 = (n - 1) // 15  # Floor of (n - 1) / 15
 
-# Main
-def main():
-    """Main function to test the above implementation. """
-
-    NUMBERS_BELOW_N = 1000
-    result = sum_of_multiples_of_3_and_5(NUMBERS_BELOW_N)
-    print 'The sum of all natural numbers less than {0} which are multiples of 3 or 5 is {1}'.format(NUMBERS_BELOW_N, result)
-
-# Call Main
-main()
+    return 3 * sum_of_natural_numbers(n3) + 5 * sum_of_natural_numbers(n5) - (15 * sum_of_natural_numbers(n15))

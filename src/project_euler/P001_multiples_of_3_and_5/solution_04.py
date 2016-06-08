@@ -1,5 +1,3 @@
-# Description: Sum of all Natural Numbers Less than 1000 Which are Multiples of 3 or 5
-
 """
 Technique
 - Sum of all multiples of 3 + Sum of all those multiples of 5 that are not multiple of 3
@@ -18,20 +16,8 @@ Instrumentation
 - Not among the fastest or the slowest algorithms.
 """
 
-NUMBERS_BELOW_N = 1000
 
-def sum_of_multiples_of_3_and_5(n):
+def answer(n):
     result = sum([x for x in range(3, n, 3)])
     result = result + sum([x for x in range(5, n, 5) if x % 3 != 0])
     return result
-
-# Main
-def main():
-    """Main function to test the above implementation. """
-
-    NUMBERS_BELOW_N = 1000
-    result = sum_of_multiples_of_3_and_5(NUMBERS_BELOW_N)
-    print 'The sum of all natural numbers less than {0} which are multiples of 3 or 5 is {1}'.format(NUMBERS_BELOW_N, result)
-
-# Call Main
-main()

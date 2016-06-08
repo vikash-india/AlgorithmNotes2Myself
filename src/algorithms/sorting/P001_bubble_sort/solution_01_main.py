@@ -4,7 +4,7 @@ from src.algorithms.sorting.P001_bubble_sort.solution_01 import bubble_sort
 
 def main():
     # Set logging level from DEBUG, INFO, WARNING. ERROR, CRITICAL
-    logging.basicConfig(level=logging.DEBUG)
+    logging.basicConfig(level=logging.INFO)
 
     FILE_NAME = '../dataset/dataset_10_reversed.txt'
 
