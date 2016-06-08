@@ -50,5 +50,5 @@ def benchmark(n, function, *args):
         benchmark(2.0, answer, 'a=1, b=2')      - Run answer(a=2, b=3) for upto 2 seconds:
     """
     (minimum_time, average_time, maximum_time) = timed_calls(n, function, *args)
-    print ('Time for %d runs (In sec): Minimum: %s, Average: %s, Maximum: %s' %
-           (n, minimum_time, average_time, maximum_time))
+    print ('Time (In seconds) for %d runs: Minimum: %s, Average: %s, Maximum: %s for function call %s with args %s' %
+           (n, minimum_time, average_time, maximum_time, function.__name__, args))
