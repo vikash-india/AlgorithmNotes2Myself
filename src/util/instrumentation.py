@@ -16,13 +16,13 @@ def timed_call(function, *args):
 
 
 def timed_calls(n, function, *args):
-    """Call function(*args) repeatedly as follows,
+    """
+    Call function(*args) repeatedly as follows,
         Case 1: Call function n times if n is an int.
         Case 2: Call function up to N seconds if n is a float.
 
-        Returns the minimum, average, and maximum time
+        Returns the minimum, average and maximum time
     """
-
     if isinstance(n, int):
         times = [timed_call(function, *args)[0] for _ in range(n)]
     else:
@@ -35,15 +35,20 @@ def timed_calls(n, function, *args):
 
 def average(numbers):
     """Return the average (arithmetic mean) of a sequence of numbers."""
-
     return sum(numbers) / float(len(numbers))
 
 
 def benchmark(n, function, *args):
-    (minimumTime, averageTime, maximumTime) = timed_calls(n, function, *args)
-    print (
-        "Time for %d runs (In sec): Minimum: %s, Average: %s, Maximum: %s" % (n, minimumTime, averageTime, maximumTime))
+    """
+    Usage Examples
+        benchmark(100, answer)                  - Run answer() 100 times.
+        benchmark(100, answer, 'a=1, b=2')      - Run answer(a=2, b=3) 100 times.
+        print benchmark(100, answer, '1, 2')    - Run answer(a, b) 100 times.
+        print benchmark(100, answer, 1, 2)      - Run answer(a, b) 100 times.
 
-# # Modify these before benchmarking
-# RUN_N_TIMES = 2
-# benchmark(RUN_N_TIMES, main)
+        benchmark(2.0, answer)                  - Run answer() for upto 2 seconds.
+        benchmark(2.0, answer, 'a=1, b=2')      - Run answer(a=2, b=3) for upto 2 seconds:
+    """
+    (minimum_time, average_time, maximum_time) = timed_calls(n, function, *args)
+    print ('Time for %d runs (In sec): Minimum: %s, Average: %s, Maximum: %s' %
+           (n, minimum_time, average_time, maximum_time))
