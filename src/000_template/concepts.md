@@ -21,7 +21,6 @@
 - Worst case time complexity: NA
 - Best case time complexity: NA
 - Average case time complexity: NA
-
 - Worst case space complexity: NA
 
 ### Interesting URLs

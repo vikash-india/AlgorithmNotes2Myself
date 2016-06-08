@@ -1,5 +1,3 @@
-# Description: Bubble Sort Algorithm
-
 import logging
 
 """
@@ -11,9 +9,6 @@ Note
 3. Limitation(s)
     - Can be optimized further.
 """
-# Configurations
-FILE_NAME = 'dataset/dataset_10_reversed.txt'
-
 def bubble_sort(numbers):
     """Implement Bubble Sort Algorithm"""
 
@@ -52,20 +47,3 @@ def bubble_sort(numbers):
     logging.info('Total Passes {0}, Iterations {1}, Swaps {2}'.format(passes_count, iterations_count, swaps_count))
     return numbers
 
-def main():
-    """Main function to test the above implementation. """
-
-    # Set logging level from DEBUG, INFO, WARNING. ERROR, CRITICAL
-    logging.basicConfig(level=logging.DEBUG)
-
-    # Read data set from the file
-    with open(FILE_NAME, 'r') as file_handle:
-        numbers = [int(line.rstrip('\n')) for line in file_handle]
-        logging.info('Original Unsorted List: {0}'.format(numbers))
-
-    # sample = [5, 1, 4, 2, 8]
-    result = bubble_sort(numbers)
-    logging.info('Sorted List: {0}.'.format(result))
-
-# Call Main
-main()

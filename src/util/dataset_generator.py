@@ -5,10 +5,11 @@ import logging
 
 # Global Configuration
 TOTAL_ROWS = 10
-SORTED = False            # Overrides REVERSE_SORTED and RANDOM_NUMBERS
-REVERSE_SORTED = True    # Overrides RANDOM_NUMBERS
-RANDOM_NUMBERS = False     # Least Precedence
+SORTED = False  # Overrides REVERSE_SORTED and RANDOM_NUMBERS
+REVERSE_SORTED = True  # Overrides RANDOM_NUMBERS
+RANDOM_NUMBERS = False  # Least Precedence
 WRITE_TO_FILE = True
+
 
 def configure_logging(write_to_file_enabled):
     """Configure Logging Based on Global Configurations."""
@@ -22,6 +23,7 @@ def configure_logging(write_to_file_enabled):
 
     # Configure Log Level
     logging.basicConfig(level=level)
+
 
 def generate_numbers():
     """Generate a list of numbers based on Global Configurations"""
@@ -40,6 +42,7 @@ def generate_numbers():
 
     return numbers
 
+
 def write_to_file(numbers, filename):
     """Write to file based on Global Configurations."""
 
@@ -49,6 +52,7 @@ def write_to_file(numbers, filename):
         with open(filename, 'w') as file_handle:
             for item in numbers:
                 file_handle.write(str(item) + '\n')
+
 
 def main():
     """Main function."""
@@ -60,8 +64,10 @@ def main():
 
     # Write numbers to a file
     # Filenames Examples: dataset_10_reverse_sorted.txt, dataset_100_sorted.txt, dataset_1000_random.txt etc.
-    filename="dataset/dataset_{0}_{1}.txt".format(TOTAL_ROWS, 'sorted' if SORTED else 'reversed' if REVERSE_SORTED else 'random')
+    filename = "dataset/dataset_{0}_{1}.txt".format(TOTAL_ROWS,
+                                                    'sorted' if SORTED else 'reversed' if REVERSE_SORTED else 'random')
     write_to_file(numbers, filename)
+
 
 # Call Main
 main()

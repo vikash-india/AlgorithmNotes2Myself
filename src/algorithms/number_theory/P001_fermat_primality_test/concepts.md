@@ -1,4 +1,4 @@
-# Description: Fermat's Primality Test
+# Fermat's Primality Test
 
 ### Fermat's Little Theorem (1640)
 - Fermat's little theorem states that if p is a prime number, then for any integer a, the number a<sup>p</sup> − a is an
@@ -55,7 +55,6 @@
 - Worst case time complexity: O(k)
 - Best case time complexity: NA
 - Average case time complexity: NA
-
 - Worst case space complexity: NA
 
 ### Note
