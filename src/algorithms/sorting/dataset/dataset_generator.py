@@ -70,4 +70,4 @@ def main():
 
 
 # Call Main
-main()
+if __name__ == '__main__': main()
