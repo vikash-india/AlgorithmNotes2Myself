@@ -94,6 +94,11 @@ update S[4] to 2. The same thing is done for next sums – each time a better so
 
 * Algorithm
 <pre>
+function optimal_solution(V<sub>1</sub>, V<sub>2</sub>, ..., V<sub>n</sub>, S)
+    Input: A list of coin values (V<sub>1</sub>, V<sub>2</sub>, ..., V<sub>n</sub>),
+           The total coin sum S
+    Output: Flow f such that f is maximal from s to t
+
     Step 1. Set Min[i] equal to Infinity for all of i
     Step 2. Min[0] = 0
 
