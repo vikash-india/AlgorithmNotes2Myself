@@ -100,13 +100,13 @@ update S[4] to 2. The same thing is done for next sums – each time a better so
                The total coin sum S
         Output: Flow f such that f is maximal from s to t
     
-        Step 1. Set Min[i] equal to Infinity for all of i
-        Step 2. Min[0] = 0
+        1. Set Min[i] equal to Infinity for all of i
+        2. Min[0] = 0
     
-        Step 3. For i = 1 to S
-        Step 4. For j = 0 to N - 1
-        Step 5.      If (V<sub>j</sub> <= i AND Min[i - V<sub>j</sub>] + 1 < Min[i])
-        Step 6.          Min[i] = Min[i - V<sub>j</sub>] + 1
+        3. For i = 1 to S
+        4. For j = 0 to N - 1
+        5.      If (V<sub>j</sub> <= i AND Min[i - V<sub>j</sub>] + 1 < Min[i])
+        6.          Min[i] = Min[i - V<sub>j</sub>] + 1
         
-        Step 7. Return Min[S]
+        7. Return Min[S]
 </pre>
