@@ -84,19 +84,13 @@ is better than the previously found one. We update it and mark S[3]=1. After add
 sum 4 composed of 2 coins. Previously we found a sum of 4 composed of 4 coins; having now found a better solution we 
 update S[4] to 2. The same thing is done for next sums – each time a better solution is found, the results are updated.
 
-### Solution
-* Input(s)
-    - A list of coin values (V<sub>1</sub>, V<sub>2</sub>, ..., V<sub>n</sub>)
-    - The total coin sum S. 
-
-* Output
-    - The minimum number of coins needed to sums upto S. 
-
-* Algorithm
+### Solution/Algorithm
 <pre>
     function answer([V<sub>1</sub>, V<sub>2</sub>, ..., V<sub>n</sub>], S)
-        Input: A list of coin values [V<sub>1</sub>, V<sub>2</sub>, ..., V<sub>n</sub>] and the total coin sum S
-        Output: Flow f such that f is maximal from s to t
+        Input: 
+            - A list of coin values [V<sub>1</sub>, V<sub>2</sub>, ..., V<sub>n</sub>] 
+            - The total coin sum S
+        Output: The minimum number of coins needed to sums upto S.
     
         1. Set Min[i] equal to Infinity for all of i
         2. Min[0] = 0
