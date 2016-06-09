@@ -6,7 +6,7 @@ def main():
     # Set level from DEBUG, INFO, WARNING. ERROR, CRITICAL
     logging.basicConfig(level=logging.INFO)
 
-    coin_values = [1, 2, 3]
+    coin_values = [1, 3, 5]
     coin_sum = 11
     print answer(coin_values, coin_sum)
 
