@@ -2,12 +2,12 @@
 
 ### Concepts/Theories
 
-#### Dynamic Programming
+##### Dynamic Programming
 Dynamic Programming (DP) is an algorithmic technique which is usually based on a recurrent formula and one (or some) 
 starting states. A sub-solution of the problem is constructed from previously found ones. DP solutions have a polynomial 
 complexity which assures a much faster running time than other techniques like backtracking, brute-force etc.
 
-#### State
+##### State
 It's a way to describe a situation, a sub-solution for the problem. For example a state would be the solution for sum i, 
 where i ≤ S. A smaller state than state i would be the solution for any sum j, where j < i. For finding a state i, we 
 need to first find all smaller states j (j < i) . Having found the minimum number of coins which sum up to i, we can 
