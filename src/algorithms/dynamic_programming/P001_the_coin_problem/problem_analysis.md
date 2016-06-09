@@ -100,7 +100,7 @@ update S[4] to 2. The same thing is done for next sums – each time a better so
     Step 3. For i = 1 to S
     Step 4. For j = 0 to N - 1
     Step 5.      If (V<sub>j</sub> <= i AND Min[i - V<sub>j</sub>] + 1 < Min[i])
-    Step 6.          Then Min[i] = Min[i - V<sub>j</sub>] + 1
+    Step 6.          Min[i] = Min[i - V<sub>j</sub>] + 1
     
-    Step 7. Output Min[S]
+    Step 7. Return Min[S]
 </pre>
