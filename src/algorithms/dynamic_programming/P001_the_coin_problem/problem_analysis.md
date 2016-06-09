@@ -49,7 +49,7 @@ The same we do for sum 4, and get a solution of 2 coins – 1+3. And so on.
 
 Here are the solutions found for all sums:
 
-| Sum	        | Minimum Number of Coins | Coin value added to a smaller sum to obtain this sum (in brackets) |
+| Sum	        | Minimum Number of Coins | sum (in brackets) |
 | ------------- | ----------------------- | ------------------------------------------------------------------ |
 | 0	            | 0	                      | -                                                                  | 
 | 1	            | 1	                      | 1 (0)                                                              |
