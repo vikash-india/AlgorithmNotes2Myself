@@ -90,7 +90,8 @@ update S[4] to 2. The same thing is done for next sums – each time a better so
         Input: 
             - A list of coin values [V<sub>1</sub>, V<sub>2</sub>, ..., V<sub>n</sub>] 
             - The total coin sum S
-        Output: The minimum number of coins needed to sums upto S.
+        Output: 
+            - The minimum number of coins needed to sums upto S.
     
         1. Set Min[i] equal to Infinity for all of i
         2. Min[0] = 0
