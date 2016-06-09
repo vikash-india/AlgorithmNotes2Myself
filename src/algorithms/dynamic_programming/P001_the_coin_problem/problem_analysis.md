@@ -49,20 +49,20 @@ The same we do for sum 4, and get a solution of 2 coins – 1+3. And so on.
 
 Here are the solutions found for all sums:
 
-| Sum	        | Minimum Number of Coins | sum (in brackets) |
-| ------------- | ----------------------- | ----------------- |
-| 0	            | 0	                      | -       | 
-| 1	            | 1	                      | 1 (0)   |
-| 2	            | 2	                      | 1 (1)   |
-| 3	            | 1	                      | 3 (0)   |
-| 4	            | 2	                      | 1 (3)   |
-| 5	            | 1	                      | 5 (0)   |
-| 6	            | 2	                      | 3 (3)   |
-| 7	            | 3	                      | 1 (6)   |
-| 8	            | 2	                      | 3 (5)   |
-| 9	            | 3	                      | 1 (8)   |
-| 10            | 2	                      | 5 (5)   |
-| 11            | 3	                      | 1 (10)  |
+| Sum	        | Minimum Number of Coins | Coin value added to a smaller sum to obtain this sum (in brackets) |
+| ------------- | ----------------------- | ------------------------------------------------------------------ |
+| 0	            | 0	                      | -                                                                  | 
+| 1	            | 1	                      | 1 (0)                                                              |
+| 2	            | 2	                      | 1 (1)                                                              |
+| 3	            | 1	                      | 3 (0)                                                              |
+| 4	            | 2	                      | 1 (3)                                                              |
+| 5	            | 1	                      | 5 (0)                                                              |
+| 6	            | 2	                      | 3 (3)                                                              |
+| 7	            | 3	                      | 1 (6)                                                              |
+| 8	            | 2	                      | 3 (5)                                                              |
+| 9	            | 3	                      | 1 (8)                                                              |
+| 10            | 2	                      | 5 (5)                                                              |
+| 11            | 3	                      | 1 (10)                                                             |
 
 As a result we have found a solution of 3 coins which sum up to 11.
 
