@@ -94,12 +94,12 @@ update S[4] to 2. The same thing is done for next sums – each time a better so
 
 * Algorithm
 <pre>
-    1. Set Min[i] equal to Infinity for all of i
-    2. Min[0] = 0
+    Step 1. Set Min[i] equal to Infinity for all of i
+    Step 2. Min[0] = 0
 
-    3. For i = 1 to S
-    4. For j = 0 to N - 1
-    5.      If (V<sub>j</sub> <= i AND Min[i - V<sub>j</sub>] + 1 < Min[i])
-    6.          Then Min[i] = Min[i - V<sub>j</sub>] + 1
-    7. Output Min[S]
+    Step 3. For i = 1 to S
+    Step 4. For j = 0 to N - 1
+    Step 5.      If (V<sub>j</sub> <= i AND Min[i - V<sub>j</sub>] + 1 < Min[i])
+    Step 6.          Then Min[i] = Min[i - V<sub>j</sub>] + 1
+    Step 7. Output Min[S]
 </pre>
