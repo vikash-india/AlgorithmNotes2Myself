@@ -91,15 +91,15 @@ update S[4] to 2. The same thing is done for next sums – each time a better so
             - A list of coin values [V<sub>1</sub>, V<sub>2</sub>, ..., V<sub>n</sub>] 
             - The total coin sum S
         Output: 
-            - The minimum number of coins needed to sums upto S.
+            - The minimum number of coins needed to sum upto S.
     
-        1. Set Min[i] equal to Infinity for all of i
-        2. Min[0] = 0
+        1. set min[i] equal to Infinity for all of i
+        2. set min[0] = 0
     
-        3. For i = 1 to S
-        4. For j = 0 to N - 1
-        5.      If (V<sub>j</sub> <= i AND Min[i - V<sub>j</sub>] + 1 < Min[i])
-        6.          Min[i] = Min[i - V<sub>j</sub>] + 1
+        3. for i = 1 to S
+        4.      for j = 0 to n - 1
+        5.          if (V<sub>j</sub> <= i and min[i - V<sub>j</sub>] + 1 < min[i])
+        6.              min[i] = min[i - V<sub>j</sub>] + 1
         
-        7. Return Min[S]
+        7. return Min[S]
 </pre>
