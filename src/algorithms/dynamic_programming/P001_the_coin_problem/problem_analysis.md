@@ -103,3 +103,21 @@ update S[4] to 2. The same thing is done for next sums – each time a better so
         
         7. return Min[S]
 </pre>
+
+### Optimisation(s)
+* NA
+
+### Complexity
+* Worst case time complexity: NA
+* Best case time complexity: NA
+* Average case time complexity: NA
+* Worst case space complexity: NA
+
+### Reference(s)
+- [None](#)
+
+### Note
+- None
+
+### TODO
+- None
