@@ -1,7 +1,6 @@
 # CREDIT: Peter Norvig's Udacity CS212 Course on Design of Computer Programs. All credit goes to him.
 import time
 
-
 def timed_call(function, *args):
     """Call function(*args).
 

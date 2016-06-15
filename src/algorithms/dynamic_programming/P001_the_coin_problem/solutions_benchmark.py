@@ -1,7 +1,7 @@
 import logging
 
 from src.algorithms.dynamic_programming.P001_the_coin_problem.solution_01 import answer
-from src.util.instrumentation import benchmark
+from src.tools.instrumentation import benchmark
 
 """
 Note

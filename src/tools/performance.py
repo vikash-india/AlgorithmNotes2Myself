@@ -1,4 +1,9 @@
 # CREDIT: Peter Norvig's Udacity CS212 Course on Design of Computer Programs. All credit goes to him.
+
+from src.tools.function import decorator
+
+
+@decorator
 def memoize(f):
     """
     A decorator that caches the return value for each call to f(args).
@@ -13,6 +18,6 @@ def memoize(f):
             cache[args] = result = f(*args)
             return result
         except TypeError:
-            """Some elements of args cannot be a dict key"""
+            """Some elements of args (mutable sequence like list) cannot be a dict key."""
             return f(args)
         return _f
