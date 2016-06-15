@@ -1,5 +1,7 @@
-from src.algorithms.number_theory.P001_fermat_primality_test.solution_01 import is_fermat_prime
 import logging
+
+from src.algorithms.number_theory.P001_fermat_primality_test.solution_01 import is_fermat_prime
+
 
 def main():
     # Set level from DEBUG, INFO, WARNING. ERROR, CRITICAL
