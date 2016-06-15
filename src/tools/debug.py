@@ -1,10 +1,12 @@
-# CREDIT: Peter Norvig's Udacity CS212 Course on Design of Computer Programs. All credit goes to him.
-
 from src.tools.function import decorator
 
 
 @decorator
 def trace(f):
+    """
+    CREDIT: Peter Norvig's Udacity CS212 Course on Design of Computer Programs. All credit goes to him.
+    """
+
     indent = '   '
 
     def _f(*args):
@@ -21,5 +23,4 @@ def trace(f):
     trace.level = 0
     return _f
 
-def disabled(f):
-    return f
+
