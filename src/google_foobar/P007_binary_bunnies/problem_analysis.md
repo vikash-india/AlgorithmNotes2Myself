@@ -25,6 +25,7 @@ The sequence [5, 9, 8, 2, 1] will generated the following binary search tree.
 </pre>
 
 Any of the following sequence will also generate the same tree shown above.
+
 1. [5, 9, 8, 2, 1] - The original sequence.
 2. [5, 9, 2, 8, 1]
 3. [5, 9, 2, 1, 8]
@@ -79,7 +80,7 @@ comes before 1. This can be done in 4! / (2! * 2!).
 
 #### 2. Combining the level l result with the result computed for levels l+.
 ```
-result = level_count * right_result * left_result
+result = level_result * right_result * left_result
 ```
 
 ### Solution/Algorithm
@@ -137,8 +138,8 @@ result = level_count * right_result * left_result
             - An integer as the result of the left_tree till now.
             - An integer as the result of the right_tree till now.
         Output: 
-            - An integer which is the combined result of the left_tree, the right_tree and the result computed 
-              for the current level. 
+            - An integer which is the combined result of the left_tree, the right_tree and the result 
+              computed for the current level. 
     
         1. level_result = factorial(m + n) / (factorial(m) * factorial(n))
         2. result = level_result * right_result * left_result
