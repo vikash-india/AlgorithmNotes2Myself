@@ -9,15 +9,15 @@
 
 ### Solution/Algorithm
 <pre>
-    function answer(x, y)
+    function answer(numbers)
         Input: 
-            - Two numbers x and y
+            - (int list) numbers = A list of integers
         Output: 
-            - The sum
+            - (int) The sum of numbers
     
-        1. set sum = x + y
+        1. set result = sum(numbers)
     
-        2. return sum
+        2. return result
 </pre>
 
 ### Optimisation(s)
