@@ -2,17 +2,12 @@ import logging
 import math
 
 """
-Technique
-- Loop from 2 till Square Root of N and keep dividing N by N
-
 Note
-- None
-
-Instrumentation
-- System Details: 8x Intel Core i7-3630QM CPU @ 2.40GHz, 16GB RAM, Ubuntu 14.04
-- Input Details: NA
-- Time for 100 runs: Minimum - NA sec, Average - NA sec, Maximum NA sec
-- Write Here
+1. Loop from 2 till Square Root of N and keep dividing N by N.
+2. Optimisation(s)
+    - None
+3. Limitation(s)
+    - None
 """
 
 

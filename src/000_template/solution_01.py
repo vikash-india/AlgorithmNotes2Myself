@@ -1,11 +1,14 @@
+import logging
+
 """
 Note
 1. Write Here
 2. Optimisation(s)
-    - Write Here
+    - None
 3. Limitation(s)
-    - Write Here
+    - None
 """
 
-def answer(names):
+
+def answer():
     pass

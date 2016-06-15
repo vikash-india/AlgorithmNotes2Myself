@@ -1,5 +1,3 @@
-# Description: Prime Factors Using Trial Division Algorithm
-
 import logging
 import math
 

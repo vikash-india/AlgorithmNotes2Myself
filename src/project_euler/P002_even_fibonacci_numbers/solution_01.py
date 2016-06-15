@@ -1,16 +1,13 @@
+import logging
+
 """
-Technique
-- A simple and intuitive technique which is fast as well.
-
-Notes
-- None
-
-Instrumentation
-- System Details: 8x Intel Core i7-3630QM CPU @ 2.40GHz, 16GB RAM, Ubuntu 14.04
-- Input Details: UPPER_BOUND = 1 Billion
-- Time for 100 runs: Minimum - 0.0 sec, Average - 0.0 sec, Maximum 0.0 sec
+Note
+1. A simple and intuitive technique which is fast as well.
+2. Optimisation(s)
+    - None
+3. Limitation(s)
+    - None
 """
-
 
 def answer(upper_bound):
     a, b = 1, 1
