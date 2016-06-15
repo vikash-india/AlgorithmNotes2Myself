@@ -29,7 +29,7 @@ def main():
 
     seq = [5, 9, 8, 2, 1, 10, 3]
     expected = '1'
-    #print(answer(seq))
+    print(answer(seq))
 
 
 # Call Main

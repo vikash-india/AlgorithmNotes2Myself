@@ -10,6 +10,7 @@
 ### Analysis
 Let's consider the sequence [5, 9, 8, 2, 1] build a binary search tree using the following rules mentioned in the 
 problem.
+
 1. All the numbers in the sequence are distinct.
 2. First number of the sequence becomes the root.
 3. The bigger number goes to the left of the root.
