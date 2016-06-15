@@ -14,7 +14,7 @@ def main():
     # DO NOT TRY NUMBERS
     NUMBER_05 = 10000000000000000001 # @UnusedVariable. 20-digit number with factors 11 x 909090909090909091
 
-    n = NUMBER_04
+    n = 12*25
     prime_factors = prime_factors_using_trial_division(n)
     logging.info('Prime Factors of {0} are {1}'.format(n, prime_factors))
 
