@@ -1,5 +1,6 @@
 from math import factorial
-from src.tools.debug import trace, disabled
+from src.tools.debug import trace
+from src.tools.function import disabled
 
 """
 Note

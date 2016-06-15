@@ -1,6 +1,6 @@
 import unittest
 
-from src.google_foobar.P007_binary_bunnies.solution_02 import answer
+from src.google_foobar.P007_binary_bunnies.solution_01 import answer
 
 
 class TestSolution(unittest.TestCase):

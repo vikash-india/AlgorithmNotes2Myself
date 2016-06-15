@@ -1,6 +1,8 @@
 import logging
 
 from src.google_foobar.P007_binary_bunnies.solution_01 import answer
+from src.google_foobar.P007_binary_bunnies.solution_02 import answer as answer2
+
 from src.tools.instrumentation import benchmark
 
 """
@@ -12,8 +14,9 @@ Note
 
 def main():
     seq = [44, 46, 48, 50, 52, 54, 56, 58, 60, 62, 64]
-    benchmark(100, answer, seq)
 
+    benchmark(1000, answer, seq)
+    benchmark(1000, answer2, seq)
 
 # Call Main
 if __name__ == '__main__': main()
