@@ -19,8 +19,7 @@ the 0th pirate redirects us to pirate at index 1 ie numbers[1]. This goes on til
 Let's keep track of all the pirates who have already been explored using another list pirates_explored. Initially the  
 pirates_explored is an empty list.
 
-numbers = [1, 7, 1, 4, 5, 0, 7, 6]
-explored_pirates = []
+We start with numbers = [1, 7, 1, 4, 5, 0, 7, 6] and explored_pirates = []
 
 - numbers[0] redirects to 1. pirates_explored = [0].
 - numbers[1] redirects to 7. pirates_explored = [0, 1].
@@ -34,8 +33,7 @@ Let numbers be an array with values [5, 9, 5, 1, 6, 3, 6, 7, 2, 3, 0, 1]. Accord
 visiting the 0th index of the array, numbers[0], which in turn will redirect us to the next pirate. The value 
 number[0] = 5 means the 0th pirate redirects us to pirate at index 5 ie numbers[5]. This goes on till a loop is detected.
 
-numbers = [5, 9, 5, 1, 6, 3, 6, 7, 2, 3, 0, 1]
-explored_pirates = []
+We start with numbers = [5, 9, 5, 1, 6, 3, 6, 7, 2, 3, 0, 1] and explored_pirates = []
 
 - numbers[0] redirects to 5. pirates_explored = [0]. 
 - numbers[5] redirects to 3. pirates_explored = [0, 5]
@@ -46,8 +44,7 @@ explored_pirates = []
 Since 3 is already explored, we have found our loop in [3, 1, 9] of [0, 5, 3, 1, 9]. Hence the answer is 3.
 
 #### Example 3
-numbers = [5, 9, 5, 1, 6, 3, 6, 7, 2, 3, 0, 1]
-explored_pirates = []
+We start with numbers = [5, 9, 5, 1, 6, 3, 6, 7, 2, 3, 0, 1] and explored_pirates = []
 
 - numbers[0] redirects to 5. pirates_explored = [0]. 
 - numbers[5] redirects to 3. pirates_explored = [0, 5]
