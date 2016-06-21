@@ -86,66 +86,66 @@ result = level_result * right_result * left_result
 
 ### Solution/Algorithm
 <pre>
-    function answer([N<sub>1</sub>, N<sub>2</sub>, ..., N<sub>n</sub>])
-        Input: 
-            - A list of values [N<sub>1</sub>, N<sub>2</sub>, ..., N<sub>n</sub>] 
-        Output: 
-            - The total number of arrangements which generates the same binary search tree.
-            
-        1. left_tree, right_tree = divide([N<sub>1</sub>, N<sub>2</sub>, ..., N<sub>n</sub>])
-    
-        2. left_result = conquer(left_tree)
-        3. right_result = conquer(right_tree)
-    
-        4. result = combine(left_tree, right_tree, left_result, right_result)
-    
-        5. return result
-    
-    
-    function divide([N<sub>1</sub>, N<sub>2</sub>, ..., N<sub>n</sub>])
-        Input: 
-            - A list of values [N<sub>1</sub>, N<sub>2</sub>, ..., N<sub>n</sub>]
-        Output: 
-            - Two list left_tree and right_tree such that left_tree has all elements greater than first 
-              element and right_tree has all elements less than the first element.
-    
-        1. root = N<sub>1</sub>
-        2. for i = N<sub>1</sub> to N<sub>n</sub>:
-        3.     if N<sub>i</sub> < root:
-        4.         Add N<sub>i</sub> to the right_tree.
-        5.     else:
-        6.         Add N<sub>i</sub> to the left_tree.
-    
-        7. return left_tree, right_tree
-    
-    
-    function conquer([N<sub>1</sub>, N<sub>2</sub>, ..., N<sub>n</sub>])
-        Input: 
-            - A list of seq values [N<sub>1</sub>, N<sub>2</sub>, ..., N<sub>n</sub>] 
-        Output: 
-            - The result for the smaller sub-problem.
-    
-        1. result = 1
-        2. if n > 2:
-        3.     result = answer([N<sub>1</sub>, N<sub>2</sub>, ..., N<sub>n</sub>)
+function answer([N<sub>1</sub>, N<sub>2</sub>, ..., N<sub>n</sub>])
+    Input: 
+        - A list of values [N<sub>1</sub>, N<sub>2</sub>, ..., N<sub>n</sub>] 
+    Output: 
+        - The total number of arrangements which generates the same binary search tree.
         
-        4. return result
+    1. left_tree, right_tree = divide([N<sub>1</sub>, N<sub>2</sub>, ..., N<sub>n</sub>])
+
+    2. left_result = conquer(left_tree)
+    3. right_result = conquer(right_tree)
+
+    4. result = combine(left_tree, right_tree, left_result, right_result)
+
+    5. return result
+
+
+function divide([N<sub>1</sub>, N<sub>2</sub>, ..., N<sub>n</sub>])
+    Input: 
+        - A list of values [N<sub>1</sub>, N<sub>2</sub>, ..., N<sub>n</sub>]
+    Output: 
+        - Two list left_tree and right_tree such that left_tree has all elements greater than first 
+          element and right_tree has all elements less than the first element.
+
+    1. root = N<sub>1</sub>
+    2. for i = N<sub>1</sub> to N<sub>n</sub>:
+    3.     if N<sub>i</sub> < root:
+    4.         Add N<sub>i</sub> to the right_tree.
+    5.     else:
+    6.         Add N<sub>i</sub> to the left_tree.
+
+    7. return left_tree, right_tree
+
+
+function conquer([N<sub>1</sub>, N<sub>2</sub>, ..., N<sub>n</sub>])
+    Input: 
+        - A list of seq values [N<sub>1</sub>, N<sub>2</sub>, ..., N<sub>n</sub>] 
+    Output: 
+        - The result for the smaller sub-problem.
+
+    1. result = 1
+    2. if n > 2:
+    3.     result = answer([N<sub>1</sub>, N<sub>2</sub>, ..., N<sub>n</sub>)
     
+    4. return result
+
+
+function combine([L<sub>1</sub>, L<sub>2</sub>, ..., L<sub>m</sub>], [R<sub>1</sub>, R<sub>2</sub>, ..., R<sub>n</sub>], left_result, right_result)
+    Input: 
+        - A list of values [L<sub>1</sub>, L<sub>2</sub>, ..., L<sub>m</sub>] for the left tree.
+        - A list of values [R<sub>1</sub>, R<sub>2</sub>, ..., R<sub>n</sub>] for the right tree.
+        - An integer as the result of the left_tree till now.
+        - An integer as the result of the right_tree till now.
+    Output: 
+        - An integer which is the combined result of the left_tree, the right_tree and the result 
+          computed for the current level. 
+
+    1. level_result = factorial(m + n) / (factorial(m) * factorial(n))
+    2. result = level_result * right_result * left_result
     
-    function combine([L<sub>1</sub>, L<sub>2</sub>, ..., L<sub>m</sub>], [R<sub>1</sub>, R<sub>2</sub>, ..., R<sub>n</sub>], left_result, right_result)
-        Input: 
-            - A list of values [L<sub>1</sub>, L<sub>2</sub>, ..., L<sub>m</sub>] for the left tree.
-            - A list of values [R<sub>1</sub>, R<sub>2</sub>, ..., R<sub>n</sub>] for the right tree.
-            - An integer as the result of the left_tree till now.
-            - An integer as the result of the right_tree till now.
-        Output: 
-            - An integer which is the combined result of the left_tree, the right_tree and the result 
-              computed for the current level. 
-    
-        1. level_result = factorial(m + n) / (factorial(m) * factorial(n))
-        2. result = level_result * right_result * left_result
-        
-        3. return result
+    3. return result
 </pre>
 
 ### Optimisation(s)

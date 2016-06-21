@@ -56,22 +56,22 @@ Since 3 is already explored, we have found our loop in in [3, 1, 9] of [0, 5, 3,
 
 ### Solution/Algorithm
 <pre>
-    function answer(numbers)
-        Input: 
-            - (int list) numbers = A list of sitting order of pirates in the bar.
-        Output: 
-            - (int) The number of pirates who form a loop.
-    
-        1. pirates_explored = []
-        2. i = 0
-           
-        3. while True: # Infinite loop is fine since the problem guarantees a loop.
-        4.      if i is already present in pirates_explored:
-        5.          return the length of that portion of the pirates_explored which forms the loop.
-                
-        6.      Add the pirate i to pirates_explored list
-    
-        7.      Set i to the pirate which it was redirected
+function answer(numbers)
+    Input: 
+        - (int list) numbers = A list of sitting order of pirates in the bar.
+    Output: 
+        - (int) The number of pirates who form a loop.
+
+    1. pirates_explored = []
+    2. i = 0
+       
+    3. while True: # Infinite loop is fine since the problem guarantees a loop.
+    4.      if i is already present in pirates_explored:
+    5.          return the length of that portion of the pirates_explored which forms the loop.
+            
+    6.      Add the pirate i to pirates_explored list
+
+    7.      Set i to the pirate which it was redirected
 </pre>
 
 ### Optimisation(s)

@@ -26,22 +26,22 @@
 
 ### Solution/Algorithm
 <pre>
-    function prime_factors_using_trial_division(n)
-        Input: 
-            - (int) n = An integer n
-        Output: 
-            - (int list) A list of prime factors of n
-    
-        1. Return "No Prime Factors" if n < 2.
-        2. For i = 2 to n
-        3.      Exit if i * i > n
-        4.      Repeat till n % p == 0
-        5.          Add i to the list of prime factors.
-        6.          Set n = n / i
-        7.      break if n = 1. All prime factors have been found. Hence no need to continue.
-        8. Add n to the list of prime factors if n > 1.
+function prime_factors_using_trial_division(n)
+    Input: 
+        - (int) n = An integer n
+    Output: 
+        - (int list) A list of prime factors of n
 
-        9. Return the list of prime factors
+    1. Return "No Prime Factors" if n < 2.
+    2. For i = 2 to n
+    3.      Exit if i * i > n
+    4.      Repeat till n % p == 0
+    5.          Add i to the list of prime factors.
+    6.          Set n = n / i
+    7.      break if n = 1. All prime factors have been found. Hence no need to continue.
+    8. Add n to the list of prime factors if n > 1.
+
+    9. Return the list of prime factors
 </pre>
 
 ### Optimisation(s)

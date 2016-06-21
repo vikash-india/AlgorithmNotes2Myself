@@ -34,17 +34,17 @@
 
 ### Solution/Algorithm
 <pre>
-    function bubble_sort(numbers)
-        Input: 
-            - (int list) numbers = A List of Unsorted Numbers.
-        Output: 
-            - (int list) A List of SORTED numbers.
-    
-        1. Get a list of unsorted numbers.
-        2. Compare each pair of adjacent elements from the beginning of the list, and, if they are in reverse order, 
-           swap them.
-        3. If at least one swap has been made, repeat Step 1.
-        4. Stop.
+function bubble_sort(numbers)
+    Input: 
+        - (int list) numbers = A List of Unsorted Numbers.
+    Output: 
+        - (int list) A List of SORTED numbers.
+
+    1. Get a list of unsorted numbers.
+    2. Compare each pair of adjacent elements from the beginning of the list, and, if they are in reverse order, 
+       swap them.
+    3. If at least one swap has been made, repeat Step 1.
+    4. Stop.
 </pre>
 
 ### Optimisation(s)

@@ -43,17 +43,17 @@
 
 ### Solution/Algorithm
 <pre>
-    function is_fermat_prime(n, k)
-        Input: 
-            - (int) n = a value to test for primality, n>3.
-            - (int) k = a parameter that determines the number of times to test for primality.
-        Output: 
-            - False if n is composite, True if n is probably prime. 
-    
-        1. Repeat k times:
-        2.      Pick a randomly in the range [2, n − 2].
-        3.      If a<sup>(n-1)</sup> ≢    p (mod n), then return Composite.
-        4. If composite is never returned: return probably prime.
+function is_fermat_prime(n, k)
+    Input: 
+        - (int) n = a value to test for primality, n>3.
+        - (int) k = a parameter that determines the number of times to test for primality.
+    Output: 
+        - False if n is composite, True if n is probably prime. 
+
+    1. Repeat k times:
+    2.      Pick a randomly in the range [2, n − 2].
+    3.      If a<sup>(n-1)</sup> ≢    p (mod n), then return Composite.
+    4. If composite is never returned: return probably prime.
 </pre>
 
 ### Optimisation(s)
