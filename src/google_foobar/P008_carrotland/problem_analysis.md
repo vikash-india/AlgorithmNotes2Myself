@@ -21,13 +21,15 @@ we create the following images of the triangles to explore our problem further.
 #### Some Obeservations
 1. Little bit of googling on how to find the interior points of a triangle given its coordinate will point us to the
    Pick's theorem. Pick's Theorem is a method for determining the area of any polygon whose vertices are points on a 
-   lattice, a regularly spaced array of points. This is exactly what we need. Use 
-   [Pick's theorem](https://en.wikipedia.org/wiki/Pick%27s_theorem).
+   lattice, a regularly spaced array of points. This is exactly what we need. Check 
+   [Pick's Theorem](problem_analysis_theory_picks_theorem.png) or 
+   [Pick's Theorem on Wikipedia](https://en.wikipedia.org/wiki/Pick%27s_theorem).
 2. In order to use Pick's theorem to find the interior points of a triangle, we need to know the area of a triangle and
    the number of points on the boundary of the triangle.
 3. The area of triangle can be found out using the Shoelace formula. Shoelace formula is a mathematical algorithm to 
-   determine the area of a simple polygon whose vertices are described by ordered pairs in the plane. Use 
-   [Shoelace Formula](https://en.wikipedia.org/wiki/Shoelace_formula#Explanation_of_name).
+   determine the area of a simple polygon whose vertices are described by ordered pairs in the plane. Check
+   [Shoelace Formula](problem_analysis_theory_shoelace_formula.png) or
+   [Shoelace Formula on Wikipedia](https://en.wikipedia.org/wiki/Shoelace_formula#Explanation_of_name).
 4. The number of boundary points on the triangle can be found using the Greatest Common Divisor (GCD). In a Cartesian 
    coordinate system, gcd(a, b) can be interpreted as the number of segments between points with integral coordinates on 
    the straight line segment joining the points (0, 0) and (a, b). This can also be used in our case even when the line
