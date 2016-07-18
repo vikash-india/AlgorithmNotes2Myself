@@ -41,7 +41,7 @@ def is_fermat_prime(number, iterations):
         remainder = pow(random_a, number - 1, number)
 
         if(remainder != 1):
-            logging.info(u'For a = {0}, {0}^({2} - 1) = {1} (mod {2}).'.format(random_a, remainder, number))
+            #logging.info(u'For a = {0}, {0}^({2} - 1) = {1} (mod {2}).'.format(random_a, remainder, number))
 
             # Definitely a Composite Number
             # print "Tested for {0}".format(tested_values_of_a)
