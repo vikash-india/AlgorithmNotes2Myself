@@ -8,17 +8,7 @@
 2. Add every third Fibonacci number instead of checking for the remainder.
 
 ### Solution/Algorithm
-<pre>
-    function answer(x, y)
-        Input: 
-            - Two numbers x and y
-        Output: 
-            - The sum
-    
-        1. set sum = x + y
-    
-        2. return sum
-</pre>
+* None
 
 ### Optimisation(s)
 * NA
