@@ -1,6 +1,7 @@
 # Algorithm Notes 2 Myself
 
-# Programming solutions to problems related to,
+# Solutions to following types of problems.
 1. Algorithms
 2. Mathematical Problems
-3. Programming Puzzles
+3. Programming Problems
+4. Puzzles
