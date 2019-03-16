@@ -1,6 +1,6 @@
-# Programming Problems
+# Algorithm Notes 2 Myself
 
 # Programming solutions to problems related to,
 1. Algorithms
 2. Mathematical Problems
-3. Puzzles
+3. Programming Puzzles
